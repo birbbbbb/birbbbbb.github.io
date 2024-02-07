@@ -6,15 +6,13 @@
     
 }
 
-p {
-    padding: 5px;
-}
-
 /** https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar **/
 body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     height: 100vh;
     width: 100vw;
-    position: fixed;
     background-image: url("../img/background.jpg");
     font-family: Arial, Helvetica, sans-serif;
     background-attachment: fixed;
@@ -26,13 +24,17 @@ body {
 img {
     border-radius: 16px;
     margin: 3em;
-    margin-left: 3em;
-    width: 85%;
+    width: 100%;
+}
+
+.row {
+    align-content: center;
 }
 
 .navBar {
-    overflow: hidden;
     margin: 1em;
+    display: flex;
+    justify-content: center;
 
     /* From https://css.glass Adds Glass effect*/
     background: rgba(151, 212, 255, 0.05);
@@ -153,4 +155,9 @@ img {
 #footer p a:hover 
 {
     color: lightgrey;
+}
+
+.textContainer img {
+    width: 10em;
+    height: 10em;
 }
