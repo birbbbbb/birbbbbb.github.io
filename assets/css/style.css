@@ -8,6 +8,10 @@
 
 /** https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar **/
 body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -19,6 +23,7 @@ body {
     background-position: left;
     background-size: cover;
     background-repeat: no-repeat;
+    object-fit: cover;
 }
 
 img {
