@@ -53,10 +53,15 @@ html {
     z-index: -1; /* Place the background behind the content */
 }
 
-.col-sm-4 img {
+.col-sm-4 {
+    place-self: center;
+}
+
+.col-md-4 img {
     border-radius: 16px;
     margin: 3em;
     width: 100%;
+    max-width: 75vw;
 }
 
 .content {
@@ -74,6 +79,7 @@ html {
 
 .row {
     align-content: center;
+    justify-content: center;
 }
 
 .navBar {
@@ -88,6 +94,10 @@ html {
     backdrop-filter: blur(7.7px);
     -webkit-backdrop-filter: blur(7.7px);
     border: 1px solid rgba(151, 212, 255, 0.01);
+
+    width: min-content;
+    margin-left: 50vw;
+    margin-right: 50vw;
 }
 
 .navBar a {
@@ -101,7 +111,7 @@ html {
 }
 
 .textContainer {
-    margin: 3em;
+    margin: 3vw;
     /* From https://css.glass */
     background: rgba(151, 212, 255, 0.05);
     border-radius: 16px;
