@@ -36,8 +36,8 @@ body {
 }
 
 .fullscreen-bg img {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     object-fit: cover; /* Ensure the image covers the entire container */
 }
 
@@ -45,6 +45,15 @@ body {
     border-radius: 16px;
     margin: 3em;
     width: 100%;
+}
+
+.content {
+    position: relative;
+    z-index: 1; /* Place it above the background image */
+    text-align: center;
+    padding: 50px;
+    color: #fff;
+    box-sizing: border-box;
 }
 
 .row {
