@@ -51,11 +51,8 @@ html {
   z-index: -1; /* Place the background behind the content */
 }
 
-.col-sm-4 {
-  place-self: center;
-}
 
-.col-md-4 img {
+.col-sm-4 img {
   border-radius: 16px;
   margin: 3em;
   width: 100%;
